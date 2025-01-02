@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDPLAY</title>
+    <link rel="icon" href="../diseño/logo.png" type="image/jpg" sizes="16x16">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
+</head>
+<body>
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand me-auto" href="inicio.html"><img src="../diseño/logo.png" alt="Logo 1" class="navbar-logo"></a>
+            <a href="inicioSesion.php" class="login-button">Comenzar</a>
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            </button>
+        </div>
+    </nav>
+    <!-- FIN BARRA DE NAVEGACIÓN -->
+
+    <!-- PRESENTACIÓN -->
+    <section class="hero-section">
+        <div class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column">
+            <h1>BIENVENIDA/O A:</h1>
+            <h1>MEDPLAY</h1>
+        </div>
+    </section>
+    <!-- FIN PRESENTACIÓN -->
+
+    <!-- CONTENIDO -->
+
+    <!-- BOXES -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <img src="../diseño/2.webp" width="100">
+                        <h3>¿Quienes somos?</h3>
+                        <p>
+                            Somos un equipo comprometido de desarrolladores e ingenieros de software de la ESCOM-IPN, enfocados en crear soluciones tecnológicas innovadoras para el cuidado de la salud.
+                        </p>
+                        <button class="btn btn-primary read-more-btn" data-bs-toggle="modal" data-bs-target="#modalDefinicion">Leer más</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <img src="../diseño/1.webp" width="100">
+                        <h3>¿Que ofrecemos?</h3>
+                        <p>
+                            Ofrecemos una plataforma de Gestión de Historia Clínica Electrónica (HCE) innovadora que integra la gamificación para mejorar la experiencia del paciente y optimizar la gestión médica...
+                        </p>
+                        <button class="btn btn-primary read-more-btn" data-bs-toggle="modal" data-bs-target="#modalIndividual">Leer más</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <img src="../diseño/3.webp" width="100">
+                        <h3>¿Como me registro?</h3>
+                        <p>
+                            Accede al protal, Haz clic en "Registrarse", completa el formulario, verifica tu cuenta y ¡Listo!.
+                        </p>
+                        <button class="btn btn-primary read-more-btn" data-bs-toggle="modal" data-bs-target="#modalGrupal">Leer más</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIN BOXES -->
+
+    <!-- RECUADROS -->
+    <div class="modal fade" id="modalDefinicion" tabindex="-1" aria-labelledby="modalDefinicionLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../diseño/2.webp" width="100">
+                    <h5 class="modal-title" id="modalDefinicionLabel">¿Quienes somos?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Somos un equipo comprometido de desarrolladores e ingenieros de software de la ESCOM-IPN, enfocados en crear soluciones tecnológicas innovadoras para el cuidado de la salud. Nuestra plataforma de Gestión de Historia Clínica Electrónica (HCE) integra la gamificación como herramienta clave para motivar a los pacientes a ser proactivos en su bienestar. A través de puntos, insignias y recompensas simbólicas, incentivamos la adherencia a tratamientos, promovemos hábitos saludables y mejoramos la interacción entre médicos y pacientes.
+                    Nos distinguimos por combinar la eficiencia tecnológica, la seguridad de datos médicos y un enfoque centrado en el usuario, con el objetivo de transformar la gestión de la información médica en hospitales, clínicas y consultorios.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="modalIndividual" tabindex="-1" aria-labelledby="modalIndividualLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../diseño/1.webp" width="100">
+                    <h5 class="modal-title" id="modalIndividualLabel">¿Que ofrecemos?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <p>
+                            Ofrecemos una plataforma de Gestión de Historia Clínica Electrónica (HCE) innovadora que integra la gamificación para mejorar la experiencia del paciente y optimizar la gestión médica. A través de nuestra plataforma, brindamos:
+                        </p>
+                        <li>
+                            Historial médico digitalizado: Accede a tus datos de manera rápida y segura.
+                        </li>
+                        <li>
+                            Gestión de citas médicas: Programa y da seguimiento a tus consultas.
+                        </li>
+                        <li>
+                            Monitoreo de tratamientos: Visualiza tus tareas y avances de manera organizada.                        
+                        </li>
+                        <li>
+                            Incentivos mediante gamificación: Obtén puntos, insignias y recompensas por cumplir tus tratamientos y objetivos de salud.
+                        </li>
+                        <li>
+                            Comunicación efectiva: Facilita la interacción entre profesionales de la salud y pacientes.
+                        </li>
+                        <p>
+                            Nuestra solución está diseñada para garantizar seguridad, eficiencia y accesibilidad en el manejo de la información médica.
+                        </p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalGrupal" tabindex="-1" aria-labelledby="modalIndividualLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="../diseño/3.webp" width="100">
+                    <h5 class="modal-title" id="modalIndividualLabel">¿Como me registro?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <p>
+                            Registrarte en nuestra plataforma es muy sencillo:
+                        </p>
+                        <ol>
+                            <li>
+                                <strong>Accede al portal:</strong>  
+                                Dirígete a la página principal de nuestra plataforma.
+                            </li>
+                            <li>
+                                <strong>Haz clic en "Registrarse":</strong>  
+                                Busca y selecciona el botón de registro en la parte superior de la página.
+                            </li>
+                            <li>
+                                <strong>Completa el formulario:</strong>
+                                <ul>
+                                    <li>Ingresa tus datos personales (nombre, correo electrónico y edad).</li>
+                                    <li>Crea una contraseña segura.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Verifica tu cuenta:</strong>  
+                                Revisa tu correo electrónico y confirma tu registro a través del enlace de verificación.
+                            </li>
+                            <li>
+                                <strong>¡Listo!</strong>  
+                                Inicia sesión con tus credenciales y comienza a explorar todas las funcionalidades que ofrecemos.
+                            </li>
+                        </ol>
+                        <br>
+                        <p>Tu salud y bienestar están a un clic de distancia. 🚀</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN RECUADROS -->
+
+    <!-- PIE DE PAGÍNA -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MEDPLAY. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- FIN PIE DE PAGÍNA -->
+
+    <!-- FIN CONTENIDO -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>

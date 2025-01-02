@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes Estadísticos</title>
+    <link rel="icon" href="../diseño/logo.png" type="image/jpg" sizes="16x16">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Estilos personalizados -->
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand me-auto" href="inicio.html">
+            <img src="../diseño/logo.png" alt="Logo 1" class="navbar-logo">
+        </a>
+        <a href="inicio.html" class="login-button">Regresar</a>
+    </div>
+</nav>
+
+<!-- Contenido principal -->
+<div class="container d-flex justify-content-center align-items-center" style="margin-top: 70px; min-height: 60vh;">
+    <div class="card shadow p-4 feature-box bg-light" style="max-width: 800px; width: 100%; border-radius: 10px;">
+        <h2 class="text-center mb-3 text-primary">Reportes Estadísticos</h2>
+
+        <!-- Gráfico: Distribución de Pacientes -->
+        <h4 class="text-center text-success mb-3">Distribución de Pacientes por Estado</h4>
+        <canvas id="pacientesChart" style="max-height: 200px;"></canvas>
+
+        <!-- Gráfico: Cumplimiento de Tareas -->
+        <h4 class="text-center text-success mb-3 mt-4">Cumplimiento de Tareas</h4>
+        <canvas id="tareasChart" style="max-height: 200px;"></canvas>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center py-3">
+    <div class="container">
+        <p class="mb-0">&copy; 2024 MEDPLAY. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<!-- Chart.js Scripts -->
+<script>
+    // Gráfico de Pacientes por Estado
+    const pacientesCtx = document.getElementById('pacientesChart').getContext('2d');
+    const pacientesChart = new Chart(pacientesCtx, {
+        type: 'pie',
+        data: {
+            labels: ['Activos', 'Inactivos', 'Pendientes'],
+            datasets: [{
+                label: 'Pacientes',
+                data: [10, 5, 2],
+                backgroundColor: ['#0078d7', '#ffc107', '#dc3545']
+            }]
+        }
+    });
+
+    // Gráfico de Cumplimiento de Tareas
+    const tareasCtx = document.getElementById('tareasChart').getContext('2d');
+    const tareasChart = new Chart(tareasCtx, {
+        type: 'bar',
+        data: {
+            labels: ['Juan Pérez', 'María López', 'Carlos Sánchez'],
+            datasets: [{
+                label: 'Tareas Completadas',
+                data: [5, 7, 4],
+                backgroundColor: '#0078d7'
+            }, {
+                label: 'Tareas Pendientes',
+                data: [2, 1, 3],
+                backgroundColor: '#ffc107'
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
