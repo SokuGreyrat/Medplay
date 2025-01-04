@@ -4,8 +4,21 @@ if (!isset($_SESSION['idUsuario']) || $_SESSION['rol'] != 'profesional') {
     header("Location: ../inicio/inicioSesion.php");
     exit();
 }
-?>
 
+// Conexión a la base de datos
+include '../db.php';
+
+// Consulta para obtener la especialidad del profesional
+$idUsuario = $_SESSION['idUsuario'];
+$query = "SELECT especialidad FROM profesionaldesalud WHERE idUsuario = ?";
+$stmt = $conn->prepare($query);
+$stmt->bind_param("i", $idUsuario);
+$stmt->execute();
+$result = $stmt->get_result();
+$profesional = $result->fetch_assoc();
+
+$especialidad = $profesional['especialidad'] ?? 'Sin especialidad'; // Manejo de caso cuando no hay especialidad registrada
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -30,6 +43,7 @@ if (!isset($_SESSION['idUsuario']) || $_SESSION['rol'] != 'profesional') {
 <!-- Contenido principal -->
 <div class="container mt-5">
     <h2 class="text-center mb-4">Bienvenido, <?php echo htmlspecialchars($_SESSION['nombre']); ?>!</h2>
+    <h4 class="text-center mb-5">Especialidad: <?php echo htmlspecialchars($especialidad); ?></h4>
     <p class="text-center mb-5">Seleccione una opción para continuar:</p>
 
     <!-- Botones de navegación -->
