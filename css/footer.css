@@ -1,0 +1,26 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+footer {
+    background-color: #17b882;
+    padding: 10px 0;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin-top: auto; /* Asegura que el footer esté siempre al final */
+}
