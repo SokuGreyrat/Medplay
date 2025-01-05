@@ -78,13 +78,16 @@ try {
     <title>Mis Citas</title>
     <link rel="icon" href="../diseño/logo.png" type="image/jpg" sizes="16x16">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
 </head>
 <body>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top bg-success">
     <div class="container">
-        <a class="navbar-brand text-white" href="#">MedPlay - Mis Citas</a>
+        <a class="navbar-brand me-auto" href="pacienteDashboard.php"><img src="../diseño/logo.png" alt="Logo 1" class="navbar-logo"></a>
         <a href="pacienteDashboard.php" class="btn btn-danger">Regresar</a>
     </div>
 </nav>

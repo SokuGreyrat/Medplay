@@ -29,14 +29,16 @@ $especialidad = $profesional['especialidad'] ?? 'Sin especialidad'; // Manejo de
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<nav class="navbar navbar-expand-lg fixed-top bg-success">
     <div class="container">
-        <a class="navbar-brand" href="#">MedPlay - Dashboard Profesional</a>
-        <a href="../inicio/inicioSesion.php" class="btn btn-danger">Cerrar Sesión</a>
+        <a class="navbar-brand me-auto" href="proDashboard.php"><img src="../diseño/logo.png" alt="Logo 1" class="navbar-logo"></a>
+        <a href="../inicio/inicioSesion.php" class="btn btn-danger">Regresar</a>
     </div>
 </nav>
 
@@ -72,7 +74,7 @@ $especialidad = $profesional['especialidad'] ?? 'Sin especialidad'; // Manejo de
 </div>
 
 <!-- Footer -->
-<footer class="mt-auto text-center text-white bg-dark py-3">
+<footer class="mt-auto text-center text-white py-3">
     <div class="container">
         <p class="mb-0">&copy; 2024 MEDPLAY. Todos los derechos reservados.</p>
     </div>

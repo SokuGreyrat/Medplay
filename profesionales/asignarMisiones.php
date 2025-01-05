@@ -22,12 +22,15 @@ $result_pacientes = $conn->query($query_pacientes);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asignar Misiones</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-primary fixed-top">
+<nav class="navbar navbar-expand-lg fixed-top bg-success">
     <div class="container">
-        <a class="navbar-brand text-white" href="proDashboard.php">MedPlay - Asignar Misiones</a>
-        <a href="proDashboard.php" class="btn btn-danger ms-2">Regresar</a>
+        <a class="navbar-brand me-auto" href="proDashboard.php"><img src="../diseño/logo.png" alt="Logo 1" class="navbar-logo"></a>
+        <a href="proDashboard.php" class="btn btn-danger">Regresar</a>
     </div>
 </nav>
 
@@ -111,7 +114,7 @@ $result_pacientes = $conn->query($query_pacientes);
     </div>
 </div>
 
-<footer class="bg-dark text-white text-center py-3">
+<footer class="text-white text-center py-3">
     <div class="container">
         <p class="mb-0">&copy; 2024 MEDPLAY. Todos los derechos reservados.</p>
     </div>

@@ -106,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <nav class="navbar navbar-expand-lg fixed-top bg-success">
     <div class="container">
         <a class="navbar-brand me-auto text-white" href="inicio.html">
-            <img src="../diseño/logo.png" alt="Logo 1" class="navbar-logo"> MEDPLAY
+            <img src="../diseño/logo.png" alt="Logo 1" class="navbar-logo">
         </a>
         <a href="inicio.html" class="btn btn-danger">Regresar</a>
     </div>
@@ -144,7 +144,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </div>
 
 <!-- Footer -->
-<footer class="text-center text-white bg-dark py-3 mt-auto">
+<footer class="text-center text-white py-3 mt-auto">
     <p class="mb-0">&copy; 2024 MEDPLAY. Todos los derechos reservados.</p>
 </footer>
 

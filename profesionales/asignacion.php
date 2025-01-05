@@ -26,12 +26,15 @@ $result = $conn->query($query);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta, Tratamientos y Misiones</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top bg-primary">
+<nav class="navbar navbar-expand-lg fixed-top bg-success">
     <div class="container">
-        <a class="navbar-brand text-white" href="proDashboard.php">MedPlay - Consulta, Tratamientos y Misiones</a>
+        <a class="navbar-brand me-auto" href="proDashboard.php"><img src="../diseño/logo.png" alt="Logo 1" class="navbar-logo"></a>
         <a href="proDashboard.php" class="btn btn-danger">Regresar</a>
     </div>
 </nav>
@@ -130,7 +133,7 @@ $result = $conn->query($query);
 </div>
 
 <!-- Footer -->
-<footer class="text-center bg-dark text-white py-3 mt-4">
+<footer class="text-center text-white py-3 mt-4">
     <div class="container">
         <p class="mb-0">&copy; 2024 MEDPLAY. Todos los derechos reservados.</p>
     </div>

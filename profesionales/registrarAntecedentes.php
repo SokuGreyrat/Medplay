@@ -22,17 +22,19 @@ $result_pacientes = $conn->query($query);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar Antecedentes Clínicos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg fixed-top bg-primary">
+<nav class="navbar navbar-expand-lg fixed-top bg-success">
     <div class="container">
-        <a class="navbar-brand text-white" href="proDashboard.php">MedPlay - Antecedentes Clínicos</a>
-        <div class="d-flex">
-            <a href="visualizarAntecedentes.php" class="btn btn-light me-2">Visualizar Antecedentes</a>
-            <a href="proDashboard.php" class="btn btn-danger">Regresar</a>
-        </div>
+        <a class="navbar-brand me-auto" href="proDashboard.php"><img src="../diseño/logo.png" alt="Logo 1" class="navbar-logo"></a>
+        <a href="visualizarAntecedentes.php" class="btn btn-light me-2">Visualizar Antecedentes</a>
+        <a href="proDashboard.php" class="btn btn-danger">Regresar</a>
     </div>
 </nav>
+
 
 <div class="container" style="margin-top: 100px;">
     <div class="card shadow p-4">
@@ -119,7 +121,7 @@ $result_pacientes = $conn->query($query);
     </div>
 </div>
 
-<footer class="text-center bg-dark text-white py-3">
+<footer class="text-center text-white py-3">
     <div class="container">
         <p class="mb-0">&copy; 2024 MEDPLAY. Todos los derechos reservados.</p>
     </div>

@@ -2,6 +2,11 @@
     background-color: #17b882;
     height: 85px;
     padding: 0.5rem;
+    position: fixed; /* Fija la navbar al tope */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que siempre esté encima */
 }
 
 .navbar-brand {
@@ -78,4 +83,8 @@
 
 .custom-offcanvas {
     background-color: #6cb8ffe3;
+}
+
+body {
+    padding-top: 85px; /* Ajusta el contenido para que no quede detrás de la navbar */
 }

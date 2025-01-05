@@ -86,6 +86,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Usuario</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
     <script>
         // Mostrar campos adicionales si se selecciona el rol 'profesional'
         function toggleProfesionalFields() {
@@ -99,7 +102,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top bg-success">
     <div class="container">
-        <a class="navbar-brand text-white" href="#">Registro</a>
+        <a class="navbar-brand me-auto" href="inicioSesion.php"><img src="../diseño/logo.png" alt="Logo 1" class="navbar-logo"></a>
         <a href="inicio.html" class="btn btn-danger">Regresar</a>
     </div>
 </nav>
@@ -156,7 +159,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </div>
 
 <!-- Footer -->
-<footer class="text-center text-white bg-dark py-3 mt-5">
+<footer class="text-center text-white py-3 mt-5">
     <p class="mb-0">&copy; 2024 MEDPLAY. Todos los derechos reservados.</p>
 </footer>
 </body>

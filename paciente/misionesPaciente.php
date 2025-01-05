@@ -34,13 +34,16 @@ $resultMisiones = $stmtMisiones->get_result();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Misiones</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
 </head>
 <body>
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<nav class="navbar navbar-expand-lg fixed-top bg-success">
     <div class="container">
-        <a class="navbar-brand" href="#">MedPlay - Mis Misiones</a>
-        <a href="pacienteDashboard.php" class="btn btn-danger ms-2">Regresar</a>
+        <a class="navbar-brand me-auto" href="pacienteDashboard.php"><img src="../diseño/logo.png" alt="Logo 1" class="navbar-logo"></a>
+        <a href="pacienteDashboard.php" class="btn btn-danger">Regresar</a>
     </div>
 </nav>
 
@@ -92,7 +95,7 @@ $resultMisiones = $stmtMisiones->get_result();
 </div>
 
 <!-- Footer -->
-<footer class="mt-auto text-center text-white bg-dark py-3">
+<footer class="mt-auto text-center text-white py-3">
     <div class="container">
         <p class="mb-0">&copy; 2024 MEDPLAY. Todos los derechos reservados.</p>
     </div>

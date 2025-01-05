@@ -22,13 +22,15 @@ $nombre = $_SESSION['nombre'];
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/footer.css" rel="stylesheet">
+    <link href="../css/navbar.css" rel="stylesheet">
 </head>
 <body>
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-success">
     <div class="container">
-        <a class="navbar-brand" href="#">MedPlay - Dashboard Paciente</a>
-
+    <a class="navbar-brand me-auto" href="pacienteDashboard.php"><img src="../diseño/logo.png" alt="Logo 1" class="navbar-logo"></a>
         <!-- Botón de Notificaciones con Despliegue -->
         <div class="d-flex align-items-center">
                 <div class="dropdown">
@@ -115,13 +117,6 @@ $nombre = $_SESSION['nombre'];
         </div>
     </div>
 </div>
-
-<!-- Footer -->
-<footer class="mt-auto text-center text-white bg-dark py-3">
-    <div class="container">
-        <p class="mb-0">&copy; 2024 MEDPLAY. Todos los derechos reservados.</p>
-    </div>
-</footer>
 
 <script>
     // Cargar los puntos acumulados y las recompensas dinámicamente
